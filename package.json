@@ -1,6 +1,6 @@
 {
-  "name": "generator-politico-interactives",
-  "description": "Yeoman generator for interactive projects at POLITICO.",
+  "name": "generator-nbnteractive",
+  "description": "Yeoman generator for interactive projects at North by Northwestern.",
   "version": "0.6.0",
   "main": "generators/app/index.js",
   "scripts": {
@@ -13,14 +13,14 @@
     "yeoman-generator"
   ],
   "author": {
-    "name": "Jon McClure",
-    "email": "jmcclure@politico.com",
-    "url": "https://github.com/The-Politico"
+    "name": "Audrey DeBruine",
+    "email": "adebruine@u.northwestern.edu",
+    "url": "https://github.com/northbynorthwestern"
   },
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/The-Politico/generator-politico-interactives.git"
+    "url": "https://github.com/northbynorthwestern/generator-nbnteractive.git"
   },
   "dependencies": {
     "chalk": "^1.1.3",

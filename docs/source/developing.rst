@@ -8,7 +8,7 @@ The generator is split into several subgenerators which are called in sequence  
 
 ::
 
-  $ yo politico-interactives:<subgenerator>
+  $ yo nbnteractive:<subgenerator>
 
 app
 '''
@@ -44,7 +44,7 @@ Gulp tasks for building static assets beyond JS and CSS (i.e. Nunjucks templates
 keys
 ''''
 
-Will write a set of keys encrypted with a passphrase to a path in the user's directory, ``~/.politico/interactives.json``. Writes the following keys:
+Will write a set of keys encrypted with a passphrase to a path in the user's directory, ``~/.nbnteractive/interactives.json``. Writes the following keys:
 
 - AWS access key
 - AWS secret key

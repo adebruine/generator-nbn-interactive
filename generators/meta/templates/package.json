@@ -1,7 +1,7 @@
 {
-  "name": "politico-interactive-<%=slug%>",
+  "name": "nbnteractive-<%=slug%>",
   "version": "1.0.0",
-  "description": "A Politico interactive",
+  "description": "A NBNteractive project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests\" && exit 1"

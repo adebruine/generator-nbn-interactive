@@ -18,7 +18,7 @@ module.exports = class extends Generator {
 
     const timestamp = new Date();
     const publishPath = `${timestamp.getFullYear()}/${this.slug}/`;
-    const url = `http://www.politico.com/interactives/${publishPath}`;
+    const url = `http://apps.northbynorthwestern.com/${publishPath}`;
 
     this.fs.copy(
       this.templatePath('gitignore'),
@@ -56,14 +56,13 @@ module.exports = class extends Generator {
       share: {
         fbook: {
           card_title: this.title,
-          card_description: 'The latest news from POLITICO.',
-          author: 'politico',
+          card_description: 'The latest from NBN.',
         },
         twitter: {
           card_title: this.title,
-          share_tweet: 'The latest news from POLITICO.',
-          card_description: 'The latest news from POLITICO.',
-          author: '@politico',
+          share_tweet: 'The latest news from NBN.',
+          card_description: 'The latest news from NBN.',
+          author: '@nbn_tweets',
         },
         image: {
           url: `${url}images/share.jpg`,
@@ -72,15 +71,7 @@ module.exports = class extends Generator {
           width: '600',
           height: '300',
         },
-        keywords: 'POLITICO, News, Washington D.C.',
-      },
-      telium: {
-        free_paid_content: 'free',
-        site_section: 'white house',
-        ad_unit_section: 'whitehouse',
-        content_author: 'Polly Politico|Peter Politico',
-        content_byline: 'By Polly Politico and Peter Politico',
-        page_name: `${this.title} — POLITICO`,
+        keywords: 'NBN, NBNteractive, Northwestern',
       },
     };
 

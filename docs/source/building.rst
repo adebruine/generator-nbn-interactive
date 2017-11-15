@@ -38,7 +38,7 @@ To add a new page to your interactive, use the :code:`new-page` subgenerator:
 
 ::
   
-  $ yo politico-interactives:new-page
+  $ yo nbnteractive:new-page
 
 This will ask you to give a name for your page. You can see your new page by going to :code:`localhost:3000/my-new-page/index.html`.
 
@@ -103,7 +103,7 @@ You will be asked if you want to use ArchieML when you start the generator. You 
 
 ::
 
-  $ yo politico-interactives:archie
+  $ yo nbnteractive:archie
 
 
 You will need to provide the ID for the Google doc you wish to use, which you can get from the URL of your doc:
@@ -149,7 +149,7 @@ To set it up, run:
 
 ::
   
-  $ yo politico-interactives:spreadsheet
+  $ yo nbnteractive:spreadsheet
 
 This will ask you for a spreadsheet ID. You can get that from the URL of your spreadsheet:
 
