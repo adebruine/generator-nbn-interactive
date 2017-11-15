@@ -1,0 +1,56 @@
+@mixin sans-serif { font-family: $sans-serif; }
+@mixin serif { font-family: $serif; }
+
+@mixin highlight($color: $nbn-purple) {
+  background-color: $color;
+  box-shadow: -.4em 0 0 $color, .4em 0 0 $color;
+  color: $white;
+  line-height: 1.5;
+  padding: .25em 0;
+}
+
+@mixin prose-width {
+  @include shift(0);
+  @include fill-parent;
+  margin: 1em auto;
+}
+
+
+@mixin left-right-layouts() {
+  &.large {
+    @include span-columns(8);
+    @include shift(-2);
+
+    @include media($medium) {
+      @include prose-width;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+
+  &.medium {
+    @include span-columns(6);
+    @include media($medium-to-small) {
+      @include prose-width;
+    }
+  }
+
+  &.small {
+    @include span-columns(4);
+  }
+
+  &.medium,
+  &.small {
+    @include media($large) {
+      @include shift(-2);
+    }
+
+    @include media($medium) {
+      @include shift(-1);
+    }
+
+    @include media($medium-to-small) {
+      @include shift(0);
+    }
+  }
+}

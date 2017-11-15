@@ -1,0 +1,31 @@
+h1,
+h2 {
+  @include serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  @include sans-serif;
+}
+
+.prose {
+
+  @extend %prose;
+  @include sans-serif;
+
+  p {
+    margin-bottom: .75em;
+    margin-top: .75em;
+  }
+
+  h3 {
+    @extend %paragraph-header;
+  }
+}
+
+.prose-justified {
+  @extend %prose;
+  text-align: justify;
+}

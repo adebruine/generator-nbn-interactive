@@ -68,6 +68,29 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('src/scss/main.scss'),
       this.destinationPath('src/scss/main.scss'));
+
+
+    this.fs.copy(
+      this.templatePath('src/scss/layout/_banner.scss'),
+      this.destinationPath('src/scss/layout/_banner.scss')); 
+    this.fs.copy(
+      this.templatePath('src/scss/layout/_footer.scss'),
+      this.destinationPath('src/scss/layout/_footer.scss'));  
+    this.fs.copy(
+      this.templatePath('src/scss/layout/_images.scss'),
+      this.destinationPath('src/scss/layout/_images.scss')); 
+    this.fs.copy(
+      this.templatePath('src/scss/layout/_layout.scss'),
+      this.destinationPath('src/scss/layout/_layout.scss')); 
+    this.fs.copy(
+      this.templatePath('src/scss/layout/_masthead.scss'),
+      this.destinationPath('src/scss/layout/_masthead.scss')); 
+    this.fs.copy(
+      this.templatePath('src/scss/layout/_prose.scss'),
+      this.destinationPath('src/scss/layout/_prose.scss'));  
+    this.fs.copy(
+      this.templatePath('src/scss/layout/_quotes.scss'),
+      this.destinationPath('src/scss/layout/_quotes.scss')); 
   }
   install() {
     const dependencies = [

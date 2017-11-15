@@ -1,0 +1,51 @@
+$bp-footer: new-breakpoint(min-width 768px);
+$footer-height: 75px;
+
+footer {
+  @include sans-serif;
+
+  background-color: $nbn-purple;
+  color: $white;
+  margin-top: 100px;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  width: 100%;
+
+  .credits p {
+    font-size: .875em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+  .credits a {
+    color: $white;
+  }
+}
+
+// Sticky Footer
+// http://css-tricks.com/snippets/css/sticky-footer/
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  margin-bottom: -($footer-height);
+  min-height: 100%;
+}
+
+main:after {
+  content: '';
+  display: block;
+}
+
+footer,
+.page-wrap:after {
+  //.push must be the same height as footer
+  height: $footer-height;
+}

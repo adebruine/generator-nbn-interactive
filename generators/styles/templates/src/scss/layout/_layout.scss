@@ -1,0 +1,79 @@
+
+.content-block {
+  @extend %content-block;
+  margin-bottom: .25em;
+  margin-top: .25em;
+
+  @include media($large) {
+    @include span-columns(8 of 12);
+    @include shift(2);
+  }
+
+  @include media($medium) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+  }
+
+  @include media($small) {
+    @include span-columns(12 of 12);
+  }
+}
+
+
+// This stuff is important
+.prose {
+
+  img,
+  figure,
+  div,
+  ul,
+  ol,
+  q {
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include left-right-layouts;
+
+    @include direction-context(left-to-right) {
+      &.left {
+        @include left-right-layouts();
+        margin-right: 1.5em;
+        padding-right: 1.5em;
+        text-align: right;
+      }
+    }
+
+
+    @include direction-context(right-to-left) {
+      &.right {
+        @include left-right-layouts();
+        margin-left: 1.5em;
+        padding-left: 1.5em;
+        text-align: left;
+      }
+    }
+
+    &.left,
+    &.right {
+      @include media($medium-to-small) {
+        margin-left: 0;
+        margin-right: 0;
+
+      }
+
+      @include media($small) {
+        text-align: left;
+        padding-left: 0;
+      }
+    }
+
+    &.center {
+      @include prose-width;
+    }
+  }
+
+  q {
+    @extend .medium;
+  }
+}

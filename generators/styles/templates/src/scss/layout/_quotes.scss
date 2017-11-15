@@ -1,0 +1,27 @@
+// $quote-small: new-breakpoint(max-width em(615px));
+
+.highlight {
+  @include highlight;
+}
+
+q {
+  @include serif;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  quotes: '\201C''\201D''\2018''\2019';
+
+  &:before,
+  &:after {
+    content: none;
+    font-size: 2em;
+  }
+
+  p {
+    display: inline;
+    font-size: 1.2em;
+    margin: 0;
+  }
+}
