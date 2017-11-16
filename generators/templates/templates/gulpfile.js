@@ -31,8 +31,8 @@ try {
   gutil.log(
     gutil.colors.bgRed('PASSPHRASE ERROR:'),
     'Could not validate keys. Correct PASSPHRASE in .env or run',
-    gutil.colors.cyan('yo politico-interactives:passphrase'),
-    'to creare a new key set.'
+    gutil.colors.cyan('yo nbnteractive:passphrase'),
+    'to create a new key set.'
   );
   gutil.log(e);
   // Exit process if keys don't validate
