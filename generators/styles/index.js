@@ -97,23 +97,23 @@ module.exports = class extends Generator {
     // helpers:
     this.fs.copy(
       this.templatePath('src/scss/helpers/_colors.scss'),
-      this.destinationPath('src/scss/layout/_colors.scss')); 
+      this.destinationPath('src/scss/helpers/_colors.scss')); 
     this.fs.copy(
       this.templatePath('src/scss/helpers/_functions.scss'),
-      this.destinationPath('src/scss/layout/_functions.scss')); 
+      this.destinationPath('src/scss/helpers/_functions.scss')); 
     this.fs.copy(
       this.templatePath('src/scss/helpers/_mixins.scss'),
-      this.destinationPath('src/scss/layout/_mixins.scss')); 
+      this.destinationPath('src/scss/helpers/_mixins.scss')); 
     this.fs.copy(
       this.templatePath('src/scss/helpers/_placeholders.scss'),
-      this.destinationPath('src/scss/layout/_placeholders.scss')); 
+      this.destinationPath('src/scss/helpers/_placeholders.scss')); 
     this.fs.copy(
       this.templatePath('src/scss/helpers/_variables.scss'),
-      this.destinationPath('src/scss/layout/_variables.scss')); 
+      this.destinationPath('src/scss/helpers/_variables.scss')); 
     //theme:
     this.fs.copy(
-      this.templatePath('src/scss/helpers/_theme.scss'),
-      this.destinationPath('src/scss/layout/_theme.scss')); 
+      this.templatePath('src/scss/theme/_theme.scss'),
+      this.destinationPath('src/scss/theme/_theme.scss')); 
 
 
   }
