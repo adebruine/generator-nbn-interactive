@@ -2,18 +2,18 @@
 // Grid Stuff
 
 %container {
-  @include outer-container;
-  @include pad(0 1.25em);
+  //@include outer-container;
+  //@include pad(0 1.25em);
 }
 
 %row {
-  @include row();
+  //@include row();
   clear: both;
   float: none;
 }
 
 %content-block {
-  @include pad(0 1.25em);
+  //@include pad(0 1.25em);
 }
 
 

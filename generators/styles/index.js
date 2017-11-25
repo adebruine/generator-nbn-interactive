@@ -7,6 +7,16 @@ module.exports = class extends Generator {
       this.destinationPath('src/scss/_bootstrap.scss'));
 
 // NBN STYLES
+    // base:
+    this.fs.copy(
+      this.templatePath('src/scss/base/_normalize.scss'),
+      this.destinationPath('src/scss/base/_normalize.scss'));
+    this.fs.copy(
+      this.templatePath('src/scss/base/_scaffold.scss'),
+      this.destinationPath('src/scss/base/_scaffold.scss'));
+      this.fs.copy(
+        this.templatePath('src/scss/base/_typography.scss'),
+        this.destinationPath('src/scss/base/_typography.scss'));
     //layout:
     this.fs.copy(
       this.templatePath('src/scss/layout/_banner.scss'),
@@ -50,8 +60,9 @@ module.exports = class extends Generator {
       this.templatePath('src/scss/theme/_theme.scss'),
       this.destinationPath('src/scss/theme/_theme.scss'));
 
-}
-
+    this.fs.copy(
+      this.templatePath('src/scss/main.scss'),
+      this.destinationPath('src/scss/main.scss'));
 
   }
   install() {
