@@ -1,24 +1,23 @@
 @import 'bootstrap';
 
-@import 'bourbon/bourbon';
+@import 'breakpoints';
+@import 'mixins';
+@import 'colors/base';
+@import 'colors/diverging';
+@import 'colors/qualitative';
+@import 'colors/sequential';
+@import 'fonts';
+@import 'icons';
 
-@import 'base/normalize';
-@import 'base/typography';
-@import 'base/scaffold';
-
-
-@import 'helpers/variables';
-@import 'helpers/colors';
-@import 'helpers/functions';
-@import 'helpers/mixins';
-@import 'helpers/placeholders';
-
-@import 'layout/layout';
-@import 'layout/banner';
-@import 'layout/footer';
-@import 'layout/images';
-@import 'layout/masthead';
-@import 'layout/prose';
-@import 'layout/quotes';
-
-@import 'theme/theme';
+@import 'elements';
+@import 'refer';
+@import 'navigation';
+@import 'header';
+@import 'footer';
+@import 'photos';
+@import 'buttons';
+@import 'ads';
+@import 'comments';
+@import 'share';
+@import 'credits';
+@import 'graphics';
