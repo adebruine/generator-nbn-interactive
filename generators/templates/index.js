@@ -62,9 +62,31 @@ module.exports = class extends Generator {
       this.templatePath('src/templates/index.html'),
       this.destinationPath('src/templates/index.html'));
     this.fs.copyTpl(
-      this.templatePath('src/templates/_base.html'),
-      this.destinationPath('src/templates/_base.html'));
-
+      this.templatePath('src/templates/base.html'),
+      this.destinationPath('src/templates/base.html'));
+      // Meta
+          this.fs.copy(
+            this.templatePath('src/templates/meta/social.html'),
+            this.destinationPath('src/templates/meta/social.html'));
+          this.fs.copy(
+            this.templatePath('src/templates/meta/icons.html'),
+            this.destinationPath('src/templates/meta/icons.html'));
+          // Sections
+          this.fs.copy(
+            this.templatePath('src/templates/_sections/text.html'),
+            this.destinationPath('src/templates/_sections/text.html'));
+          this.fs.copy(
+            this.templatePath('src/templates/_sections/section-header.html'),
+            this.destinationPath('src/templates/_sections/section-header.html'));
+          this.fs.copy(
+            this.templatePath('src/templates/_sections/image.html'),
+            this.destinationPath('src/templates/_sections/image.html'));
+          this.fs.copy(
+            this.templatePath('src/templates/_sections/credits.html'),
+            this.destinationPath('src/templates/_sections/credits.html'));
+          this.fs.copy(
+            this.templatePath('src/templates/_sections/d3-graphic.html'),
+            this.destinationPath('src/templates/_sections/d3-graphic.html'));
 
     // Template context
     this.fs.writeJSON('src/data/data.json', {});
