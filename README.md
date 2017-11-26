@@ -12,3 +12,5 @@ See the docs on [readthedocs](http://generator-politico-interactives.readthedocs
 `npm link`
 `yo nbnteractive`
 - Do the thing!
+
+To input story content, use `aml-gdoc-server` to generate JSON from story content formatted with ArchieML. Paste JSON into `src/data/data.json`. Open `src/templates/index.html`; to access any data, type `{{DATA.<key>}}`.
